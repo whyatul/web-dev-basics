@@ -1,0 +1,19 @@
+ <!DOCTYPE html> <!--declearation defines the document type to be HTML5 tels the browser to render the  page in standard mode -->
+<html lang="en"> <!--Root element of an html page 'lang="en"' attributes specifies that the language of the document is english'-->
+<head><!--section contains meta-information about the HTML document, which is not displayed on the page itself-->
+    <meta charset="UTF-8"><!--tag specifies the character encoding for the document. UTF-8 is a universal character set that includes almost all characters from all human languages.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing the InnerHTML</title>
+</head>
+<body>
+    <h1>Changin the InnerHTML on Click</h1>
+    <p id="p1">Click on the Button to change me</p>
+    <button type="button" onclick='document.getElementById("p1").innerHTML="Hello JavaScript!"''>Click Me</button>
+</body>
+</html>
+<!-- type="button" this attribute specifies that it's a standard clickable button
+    onclick is javascript event handler defines what happnes on click
+    document object (which represents the entire HTML document)
+    getElementById() method to find the HTML element with id 
+    innerHTML property refers to the html content inside the selected element
+-->

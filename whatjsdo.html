@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showing What JS can Do</title>
+</head>
+<body>
+    <h1>Here showing What JavaScript Can do</h1>
+    <br>
+    <h2>1.</h2>
+    <h2>Changing the value of HTML attribute by JS</h2>
+    <button type="button" onclick='document.getElementById("testimg").src="img/pic_bulbon.gif"'>Turn on Light</button>
+    <br>
+    <button type="button" onclick='document.getElementById("testimg").src="img/pic_bulboff.gif"'>Turn off Light</button>
+    <img id="testimg" src="img/pic_bulboff.gif" >
+    <br>
+    <h2>2.</h2>
+    <h2> Changin the InnerHTML on Click</h2>   
+    <p id="p1">Click on the Button to change me</p>
+    <button type="button" onclick='document.getElementById("p1").innerHTML="Hello JavaScript!"''>Click Me</button>
+    <br>
+    <h2>3.</h2>
+    <h2>JavaScript can show Hidden HTML Elements</h2>
+    <p id="text" style="display: none;">Hello JavaScript!</p>
+    <button type="button" onclick="document.getElementById('text').style.display='block'">Click and see the Magic</button>
+    <br>
+    <h2>4.</h2>
+    <h2>Changing the style of HTML element by JavaScript</h2>
+    <p id="text2" >Everything needs a Start</p>
+    <br>
+    <h3>Click to Increase the Font Size</h3>
+    <button type="button" onclick="document.getElementById('text2').style.fontSize='40px'">Increase the font Size</button>
+    <br>
+    <h3>Refresh before Clicking & Increase the Text and change the Font Family</h3>
+    <button type="button" onclick="document.getElementById('text2').style.fontFamily='monospace';document.getElementById('text2').style.fontSize='40px'">Click to change family and size</button>
+    <br>
+    <h3>Refresh before Clicking & Increase the Text and change the Text Color</h3>
+    <button type="button" onclick="document.getElementById('text2').style.color='blue';document.getElementById('text2').style.fontSize='40px'">Click to change family and size</button>
+    <br>
+    <h3>5.</h3>
+    <h3>Using External JavaScript</h3>
+    <p id="text3">Wanaa see Magic? Click the Button Bellow</p>
+    <button onclick="myfunc()">Click Me!</button>
+<script src="script.js"></script>
+</body>
+</html>
